@@ -39,11 +39,11 @@ Este parte del proyecto corresponde al desarrollo de un sistema para gestionar c
 
 ### **Tecnologías Usadas**
 
-HTML: Para la estructura de la página.
-CSS/SASS: Para los estilos y diseño visual.
-JavaScript (ES6): Para la lógica de la aplicación y manejo de eventos.
-JSON: Para gestionar y manipular datos de los doctores.
-DOM (Document Object Model): Para la interacción dinámica con la página.
-Consola del Navegador: Para pruebas y depuración.
+- HTML: Para la estructura de la página.
+- CSS/SASS: Para los estilos y diseño visual.
+- JavaScript (ES6): Para la lógica de la aplicación y manejo de eventos.
+- JSON: Para gestionar y manipular datos de los doctores.
+- DOM (Document Object Model): Para la interacción dinámica con la página.
+- Consola del Navegador: Para pruebas y depuración.
 
 Carlos Farias Galdames
