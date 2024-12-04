@@ -1,75 +1,50 @@
-# Hospital Nueva Vida - Sitio Web
+# Proyecto: Hospital Web - Evaluación M3 - Laboratorio Virtual 1
 
-¿Qué es el event loop en JavaScript?
+Este proyecto corresponde al desarrollo de un sistema para gestionar citas médicas en un hospital, cumpliendo con los requisitos solicitados en la evaluación. A continuación, se describen los puntos principales implementados y desarrollados.
+##
 
-El event loop es el mecanismo que JavaScript usa para gestionar la ejecución de tareas, manejar eventos, y procesar operaciones asíncronas, como temporizadores o peticiones de red. Es fundamental para entender cómo JavaScript, siendo de un solo hilo, maneja múltiples operaciones.
+## **Funcionalidades Principales **
 
-Explicación del event loop
-Componentes clave:
+### **Listado de Doctores Dinámico:**
+- **Configuración del entorno de trabajo:**
+  - Se implementó un JSON con la información de los doctores, incluyendo su nombre, especialidad, experiencia, descripción y foto.
+  - Los datos se renderizan dinámicamente en la página utilizando JavaScript para mostrar las tarjetas de cada doctor.
 
-Call Stack (Pila de llamadas): Es una estructura de datos donde se almacena el orden en que se ejecutan las funciones. Las funciones entran a la pila cuando se invocan y salen cuando terminan su ejecución.
-Heap: Es el lugar donde se almacena la memoria para los objetos y variables creados en JavaScript.
-Task Queue (Cola de tareas): Es una lista donde se almacenan las tareas asíncronas (por ejemplo, un setTimeout o un evento del DOM) que están listas para ser ejecutadas.
-Flujo del event loop:
-
-JavaScript ejecuta las funciones en el Call Stack de manera sincrónica.
-Cuando una operación asíncrona (como un setTimeout) termina, su callback es enviado a la Task Queue.
-El event loop verifica si el Call Stack está vacío. Si lo está, toma la primera tarea de la Task Queue y la empuja al Call Stack para ser ejecutada.
+### **2. Modal para Reservar Citas:**
+  - Al hacer clic en el botón "Solicitar Hora" de un doctor, se abre un modal dinámico que muestra un formulario de reserva.
+  -El nombre del doctor se completa automáticamente en el formulario.
 
 
-# Path to the README.md file
-readme_path = os.path.join(main_folder_path, 'README.md')
+### **3.Confirmación de Citas:**
+  -Al enviar el formulario de reserva, se muestra un modal de confirmación con el mensaje: "¡Tu hora fue agendada con éxito!"..
 
-# Content to add about the event loop
-event_loop_content = """
-## Funcionamiento del Event Loop en JavaScript
+### **4.Operaciones con JSON:**
+  - Clonación y modificación de datos del JSON sin afectar el original.
+  - Fusión de datos adicionales con los doctores para agregar servicios.
+  - Transformación del JSON a un formato legible utilizando JSON.stringify().
 
-El Event Loop en JavaScript es el mecanismo que permite gestionar tareas sincrónicas y asíncronas en un único hilo de ejecución. Aquí explicamos sus principales componentes:
+### **5. Ordenamiento y Búsqueda:**
+  - Implementación de funciones para ordenar doctores por nombre y experiencia.
+  - Realización de una búsqueda binaria para encontrar doctores por nombre.
 
-### Componentes clave:
-1. **Call Stack (Pila de llamadas):**
-   Una estructura de datos que almacena las funciones a ejecutar en orden. Las funciones se añaden a la pila al ser invocadas y se eliminan al finalizar.
+### **6. Pilas y Colas:**
+  - Uso de una pila para gestionar el registro y procesamiento de citas.
+  - Uso de una cola para gestionar pacientes en espera.
 
-2. **Heap:**
-   El lugar donde se almacena la memoria dinámica para objetos y variables creadas.
-
-3. **Task Queue (Cola de tareas):**
-   Una lista de tareas asíncronas que están listas para ser ejecutadas, como callbacks de `setTimeout`, eventos del DOM, o peticiones AJAX.
-
-### Flujo del Event Loop:
-1. JavaScript ejecuta las funciones en la **Call Stack** de manera sincrónica.
-2. Las operaciones asíncronas (como un `setTimeout`) se envían a la **Task Queue**.
-3. El Event Loop verifica si la **Call Stack** está vacía. Si lo está, toma la primera tarea de la **Task Queue** y la pasa a la **Call Stack** para ejecutarla.
+### **7. Validación de Formulario:**
+  - El formulario de reserva incluye validaciones básicas, como campos requeridos para nombre, correo y fecha.
 
 
 
+ 
 
-2. Manejo de Variables, Operadores y Prompt
+### **Tecnologías Usadas**
 
+HTML: Para la estructura de la página.
+CSS/SASS: Para los estilos y diseño visual.
+JavaScript (ES6): Para la lógica de la aplicación y manejo de eventos.
+JSON: Para gestionar y manipular datos de los doctores.
+DOM (Document Object Model): Para la interacción dinámica con la página.
+Consola del Navegador: Para pruebas y depuración.
 
-Solicita información al usuario mediante prompts
-
-
-Implementación
-
-Solicitar el nombre, email, y teléfono del usuario mediante prompt.
-
-Mostrar esta información en:
-Una alerta en el navegador.
-La consola del navegador.
-
-
-
-Alcance (Scope) de Variables en JavaScript
-En JavaScript, el scope determina dónde están disponibles las variables declaradas dentro del código. Existen tres tipos principales de alcance:
-
-Tipos de Scope:
-Global Scope:
-
-Una variable declarada fuera de cualquier función o bloque tiene un alcance global. Es accesible en cualquier parte del programa.
-Function Scope:
-
-Las variables declaradas dentro de una función solo están disponibles dentro de esa función.
-Block Scope:
-
-Las variables declaradas con let o const dentro de un bloque ({ }) están disponibles solo dentro de ese bloque.
+Carlos Farias Galdames
