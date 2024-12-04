@@ -1,12 +1,11 @@
 # Proyecto: Hospital Web - Evaluación M3 - Laboratorio Virtual 1
 
-Este proyecto corresponde al desarrollo de un sistema para gestionar citas médicas en un hospital, cumpliendo con los requisitos solicitados en la evaluación. A continuación, se describen los puntos principales implementados y desarrollados.
+Este parte del proyecto corresponde al desarrollo de un sistema para gestionar citas médicas del sitio web hospital, cumpliendo con los requisitos solicitados en la evaluación. A continuación, se describen los puntos principales implementados y desarrollados.
 ##
 
 ## **Funcionalidades Principales **
 
 ### **Listado de Doctores Dinámico:**
-- **Configuración del entorno de trabajo:**
   - Se implementó un JSON con la información de los doctores, incluyendo su nombre, especialidad, experiencia, descripción y foto.
   - Los datos se renderizan dinámicamente en la página utilizando JavaScript para mostrar las tarjetas de cada doctor.
 
